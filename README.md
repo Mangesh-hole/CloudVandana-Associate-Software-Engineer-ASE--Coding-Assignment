@@ -4,3 +4,7 @@ I have established this repository for the coding assignment associated with the
 # Java
 
 # Task-1: Create a ShuffleArray function to shuffle the Array
+
+# Task-2: Create a RomanNumberToInteger function to convert Roman Numbers to Integer.
+
+# Task-3: Create a PangramCheck function to check whether the sentence Pangram or not.
