@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <h1>Customer Survey Form</h1>
+        <form id="form">
+            <div class="box" id="name">
+                <div class="fname">
+                    <label for="firstName">First Name:</label>  <br>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="lname">
+                    <label for="lastName">Last Name:</label>  <br>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="box">
+                <label for="dob">Date of Birth:</label>  <br>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="box">
+                <label for="country">Country:</label>  <br>
+                <select id="country" required>
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="IND">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <div class="gender">
+                    <label for="gender">Gender:</label>  <br><br>
+                    <input type="radio" id="genderMale" name="gender"  value="Male">Male
+                    <input type="radio" id="genderFemale" name="gender" value="Female">Female
+                    <input type="radio" id="genderOther" name="gender" value="Other">Other
+                </div>  
+            </div>
+
+            <div class="box">
+                <label for="profession">Profession:</label>  <br>
+                <input type="text" id="profession" required>
+            </div>
+
+            <div class="box">
+                <label for="email">Email:</label>  <br>
+                <input type="text" id="email" required>
+            </div>
+
+            <div class="box">
+                <label for="mobile">Mobile Number:</label>  <br>
+                <input type="number" id="mobile" required>
+            </div>
+
+            <div class="box" id="btn">
+                <button type="button" id="submitbtn" onclick="submitForm()">Submit</button>
+                <button type="button" id="resetbtn" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+
+        <div id="popup" style="display: none;">
+            <h2>Survey Form Submission</h2>
+            <div id="popupContent"></div>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
